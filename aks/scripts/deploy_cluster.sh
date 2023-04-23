@@ -65,7 +65,7 @@ if [[ $flagDestroy != "true" ]]; then
 else
 
   # Destroy resources
-  terraform -chdir=../terraform/host destroy \
+  terraform -chdir=../terraform destroy \
     -var project=$project \
     -var location_long=$locationLong \
     -var location_short=$locationShort \
